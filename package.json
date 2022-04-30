@@ -1,37 +1,42 @@
 {
-  "name": "mydao",
-  "version": "2.0.0",
-  "private": true,
-  "dependencies": {
-    "@thirdweb-dev/react": "^2.0.3",
-    "@thirdweb-dev/sdk": "^2.0.19",
-    "ethers": "^5.6.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "5.0.0",
-    "util": "^0.12.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+    "name": "frontend",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@craco/craco": "7.0.0-alpha.3",
+        "@ethersproject/constants": "^5.6.0",
+        "@thirdweb-dev/react": "^2.0.4",
+        "@thirdweb-dev/sdk": "^2.0.25",
+        "ethers": "^5.6.2",
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0",
+        "react-scripts": "5.0.0"
+    },
+    "scripts": {
+        "start": "craco start",
+        "build": "craco build",
+        "test": "craco test",
+        "eject": "craco eject"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "source-map-loader": "^3.0.1"
+    }
 }
